@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-5 ">
+                <div class="Calculator" id="calculator">
+                    <input type="text" id="input" placeholder="0" readonly />
+                    <div>
+                        <div class="buttonPower">
+                            <h3 onclick="powerOff()" id="offBtn">OFF</h3>
+                            <h3 class="onBtn" onclick="powerOn()" id="onBtn">ON</h3>
+                        </div>
+                        <button class="operator" onclick="clearInput()">AC</button>
+                        <button class="operator" onclick="deleteLast()">DEL</button>
+                        <button onclick="centAge()" class="operator" value="perBtn">%</button>
+                        <button onclick="show('/')" class="operator2" value="divBtn">/</button>
+                    </div>
+                    <div>
+                        <button onclick="show(7)">7</button>
+                        <button onclick="show(8)">8</button>
+                        <button onclick="show(9)">9</button>
+                        <button onclick="show('*')" class="operator2" value="multBtn">*</button>
+                    </div>
+                    <div>
+                        <button onclick="show(4)">4</button>
+                        <button onclick="show(5)">5</button>
+                        <button onclick="show(6)">6</button>
+                        <button onclick="show('-')" class="operator2" value="subBtn">-</button>
+                    </div>
+                    <div>
+                        <button onclick="show(1)">1</button>
+                        <button onclick="show(2)">2</button>
+                        <button onclick="show(3)">3</button>
+                        <button onclick="show('+')" class="operator2" value="addBtn">+</button>
+                    </div>
+                    <div>
+                        <button onclick="show('00')">00</button>
+                        <button onclick="show(0)">0</button>
+                        <button onclick="show('.')">.</button>
+                        <button class="equalBtn" onclick="calculate('=')" id="equal">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+
+</html>

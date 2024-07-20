@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 73%;
+    height: min-content;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(41, 40, 41));
+}
+
+.Calculator{
+    border: 1px, solid rgb(102, 38, 38);
+    padding: 20px;
+    border-radius: 18px;
+    background: rgb(20, 20, 20);
+    box-shadow: 0px 3px 18px rgba(38, 76, 151, 0.6);
+}
+
+input{
+    width: 325px;
+    border: none;
+    padding: 25px;
+    margin: 10px;
+    color: #ffff;
+    background: black;
+    box-shadow: 0px 4px 16px rgba(86, 86, 86, 0.2);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 62px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: -7px -7px 14px rgba(254, 254, 254, 0.1);
+    color: #ffff;
+    font-size: large;
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: orange;
+}
+
+.operator{
+    color: greenyellow;
+}
+
+.operator2 {
+    color: rgb(226, 43, 134);
+    font-size: 20px;
+}
+
+.buttonPower{
+    display: flex;
+    color: red;
+    cursor: pointer;
+}
+
+.onBtn{
+    color: blue;
+    margin-left: 41vh;
+}
+
+.Calculator {
+    transition: background-color 0.3s;
+}
+
+.Calculator.off {
+    background-color: black;
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+input {
+    color: white;
+}
+
+@media screen and (max-width: 1099px) {
+    body{
+        width: fit-content;
+        height: fit-content;
+        background: linear-gradient(45deg, rgb(0, 0, 0), rgb(41, 40, 41));
+    }
+    
+    .Calculator{
+        border: 1px, solid rgb(102, 38, 38);
+        padding: 20px;
+        border-radius: 18px;
+        background: rgb(20, 20, 20);
+        box-shadow: 0px 3px 18px rgba(38, 76, 151, 0.6);
+    }
+    
+    input{
+        width: 100%;
+        border: none;
+        padding: 25px;
+        margin: 10px;
+        color: #ffff;
+        background: black;
+        box-shadow: 0px 4px 16px rgba(86, 86, 86, 0.2);
+        font-size: 40px;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    input::placeholder{
+        color: white;
+    }
+    
+    button{
+        border: none;
+        width: 45px;
+        height: 62px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: -7px -7px 14px rgba(254, 254, 254, 0.1);
+        color: #ffff;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .onBtn{
+        color: blue;
+        margin-left: 0;
+    }
+    
+}
+
+/* @media screen and (max-width: 399px) {
+    body{
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(45deg, rgb(0, 0, 0), rgb(41, 40, 41));
+    }
+    
+    .Calculator{
+        border: 1px, solid rgb(102, 38, 38);
+        padding: 20px;
+        border-radius: 18px;
+        background: rgb(20, 20, 20);
+        box-shadow: 0px 3px 18px rgba(38, 76, 151, 0.6);
+    }
+    
+    input{
+        width: 100%;
+        border: none;
+        padding: 25px;
+        margin: 10px;
+        color: #ffff;
+        background: black;
+        box-shadow: 0px 4px 16px rgba(86, 86, 86, 0.2);
+        font-size: 40px;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    input::placeholder{
+        color: white;
+    }
+    
+    button{
+        border: none;
+        width: 60px;
+        height: 62px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: -7px -7px 14px rgba(254, 254, 254, 0.1);
+        color: #ffff;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .onBtn{
+        color: blue;
+        margin-left: 0;
+    }
+}    */
